@@ -1,0 +1,51 @@
+html {
+  width: 100%;
+}
+
+#homepage {
+  top: 80px;
+  position: relative;
+}
+
+#title {
+  font-family: "Chewy", sans-serif;
+  src: url(/assets/chewy.ttf) format("truetype");
+  font-size: 48px;
+  text-align: center;
+}
+
+#homepage_text {
+  font-family: "Gudea-Regular", serif;
+  src: url(/assets/gudea-regular.ttf) format("truetype");
+  text-align: center;
+}
+
+#links {
+  text-align: center;
+}
+
+#rock_link {
+  width: 100px;
+  height: 100px;
+}
+
+#rock {
+  height: 100px;
+  overflow: hidden;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
