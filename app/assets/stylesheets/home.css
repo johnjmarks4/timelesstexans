@@ -16,7 +16,7 @@ html {
 
 #homepage_text {
   font-family: "Gudea-Regular", serif;
-  src: url(/assets/gudea-regular.ttf) format("truetype");
+  src: url(/assets/gudea-regular.ttf) format("opentype");
   text-align: center;
 }
 
