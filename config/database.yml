@@ -2,26 +2,28 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: 'postgres'
-  password: 'postgres'
+  username: postgres
+  password: Drae1Be9
 
 development:
-  <<: *default
-  database: timelesstexans
-  username: 'postgres'
-  password: 'postgres'
+  adapter: postgresql
+  database: myapp_development
+  username: postgres
+  password: Drae1Be9
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: timelesstexans
-  username: 'postgres'
-  password: 'postgres'
+  adapter: postgresql
+  database: myapp_test
+  username: postgres
+  password: Drae1Be9
 
 production:
   <<: *default
-  database: timelesstexans
-  username: 'postgres'
-  password: 'postgres'
+  adapter: postgresql
+  database: myapp_production
+  username: postgres
+  password: Drae1Be9
