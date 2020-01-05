@@ -13,6 +13,8 @@ module Timelesstexans
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    config.serve_static_assets = true
+    config.assets.compile = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.enabled = true
 
