@@ -1,0 +1,51 @@
+html {
+  width: 100%;
+  width: 100%;
+}
+
+#homepage {
+  top: 80px;
+  position: relative;
+}
+
+#title {
+  font-family: "Chewy", sans-serif;
+  src: url(/assets/chewy.ttf) format("truetype");
+  font-size: 48px;
+  text-align: center;
+}
+
+#homepage_text {
+  font-family: "Gudea-Regular", serif;
+  src: url(/assets/gudea-regular.ttf) format("opentype");
+  text-align: center;
+}
+
+#links {
+  position: absolute;
+  bottom: -106%;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  left: -53px;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  padding-left: 0px;
+  padding-right: 61px;
+  background-color: black;
+}
+
+#links > li {
+  display: block;
+  float: left;
+  width: 10%;
+  margin-left: 57.1px;
+  padding-bottom: 15px;
+}
+
+#links img {
+  width: 177px;
+  height: 159px;
+  overflow: hidden;
+  object-fit: cover;
+}
