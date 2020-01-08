@@ -4,7 +4,24 @@
 
 <div id="homepage">
 
-  <h1 id="title">Explore Texas</h1>
+  <div id="title_div1">
+    <div id="title_div2">
+
+      <div id="left_stars">
+        <%=image_tag("star.png", class: "star", id: "star1") %>
+        <%=image_tag("star.png", class: "star", id: "star2") %>
+        <%=image_tag("star.png", class: "star", id: "star3") %>
+      </div>
+
+      <h1 id="title">Explore Texas</h1>
+
+      <div id="right_stars">
+        <%=image_tag("star.png", class: "star", id: "star1") %>
+        <%=image_tag("star.png", class: "star", id: "star4") %>
+        <%=image_tag("star.png", class: "star", id: "star3") %>
+      </div>
+    </div>
+  </div>
 
   <%=image_tag("noun_Texas_2286.png", id: "texas") %>
 
@@ -24,5 +41,5 @@
 
     <li><%=image_tag("5_beach.jpg") %></li>
 
-  </ul>
+  </ul>  
 </div>
