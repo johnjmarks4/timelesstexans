@@ -1,0 +1,89 @@
+.text_display {
+  font-size: 11px;
+  letter-spacing: 1.25px;
+  font-family: Montserrat, Tahoma;       
+  font-weight: normal;
+  text-align: center;      
+}
+
+.buttons {
+  display: inline-block;
+}
+
+.button_transform {
+  display: inline-block;
+}
+
+.buttons:hover .text_display {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);   
+  color: #98ff98;   
+}
+
+#links #big_bend {
+}
+
+#links #big_bend_green, #big_bend_hover:hover {
+}
+
+#links #prairies_lakes {
+}
+
+#links #prairies_lakes_green {
+
+}
+
+#links #panhandle_plains {
+
+}
+
+#links #panhandle_plains_green {
+}
+
+#links #hill_country {
+}
+
+#links #hill_country_green {
+}
+
+#links #pineywoods {
+}
+
+#links #pineywoods_green {
+}
+
+#big_bend:hover {
+}
+
+#prairies_lakes:hover {
+}
+
+#panhandle_plains:hover {
+}
+
+#contact:hover {
+}
+
+#links .buttons:hover .text_display, .text_display:hover {
+  background-color: #181818;
+  -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
+  -ms-transition: background-color 100ms linear, opacity 0.25s linear;
+  transition: background-color 100ms linear, opacity 0.25s linear;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+#links .text_display {
+  opacity: 0;
+  width: 59px !important;
+  height: 51px;
+  line-height: 51px !important;
+  white-space: nowrap;
+}
+
+#links .text_display h {
+  line-height: 51px !important;
+}
