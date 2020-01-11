@@ -29,39 +29,53 @@
     <ul id="links">
       <%= content_tag(:div, class: "buttons", id: "big_bend") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("balancedrock.jpg"), "/big_bend" %></li>
+          <li><%=link_to "Big Bend", "/big_bend", class: "text_display" %></li>
         </div>
       <% end -%>
       <%= content_tag(:div, class: "buttons", id: "prairies_lakes") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("Crosstimbers 2005 Richards Ranch.png"), "/prairies_lakes" %></li>
+          <li><%=link_to "Prairies/Lakes", "/prairies_lakes", class: "text_display" %></li>
         </div>
       <% end -%>
       <%= content_tag(:div, class: "buttons", id: "panhandle_plains") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("800px-Buffalo_Lake_Texas_Windmill_2009.jpg"), "/panhandle_plains" %></li>
+          <li><%=link_to "Panhandle Plains", "/panhandle_plains", class: "text_display" %></li>
         </div>
       <% end %>
       <%= content_tag(:div, class: "buttons", id: "hill_country") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("PLACES_HillCountry_H_LIST_TTD_4_cec5faeb-d592-411f-8dac-0cb6ffa17428.jpg"), "/hill_country" %></li>
+          <li><%=link_to "Hill Country", "/hill_country", class: "text_display" %></li>
         </div>
       <% end -%>
       <%= content_tag(:div, class: "buttons", id: "pineywoods") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("sam-houston-statue-huntsville-3-696x407.jpg"), "/pineywoods" %></li>
+          <li><%=link_to "Pineywoods", "/pineywoods", class: "text_display" %></li>
         </div>
       <% end -%>
       <%= content_tag(:div, class: "buttons", id: "south_texas_plains") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("Taos_Alan Eckert.jpg"), "/south_texas_plains" %></li>
+          <li><%=link_to "South Texas Plains", "/south_texas_plains",class: "text_display" %></li>
         </div>
       <% end -%>
       <%= content_tag(:div, class: "buttons", id: "gulf_coast") do -%>
         <div class="button_transform">
-          <li><%=link_to image_tag("5_beach.jpg"), "/gulf_coast" %></li>
+          <li><%=link_to "Gulf Coast", "/gulf_coast", class: "text_display" %></li>
         </div>
       <% end -%>
     </ul>
   </div>
 </div>
+
+<script>
+  function toggleHeader() {
+    var header = document.querySelector("#button_panel");
+    var toggler = document.querySelector("#header_toggler");
+    if (header.style.left == "100%") {
+      header.style = "left: 0; opacity: 1;";
+      toggler.style["background-position"] = "0 -150px";
+    } else {
+      header.style = "left: 100%; opacity: 0;";
+      toggler.style["background-position"] = "initial";
+    }
+  }
+</script>
