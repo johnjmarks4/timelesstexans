@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'Carnevalee';
+  src: url('Carnevalee Freakshow.ttf') format('truetype');
+}
+
 .text_display {
-  font-size: 11px;
-  letter-spacing: 1.25px;
-  font-family: Montserrat, Tahoma;       
+  font-family: 'Carnevalee';
+  font-size: 40px;
+  letter-spacing: 1.25px; 
   font-weight: normal;
-  text-align: center;      
+  text-align: center;    
 }
 
 .button_transform {
@@ -16,7 +21,7 @@
   left: 100px;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.5);   
-  color: #98ff98;   
+  color: black;   
 }
 
 #links .buttons:hover .text_display, .text_display:hover {
@@ -41,4 +46,54 @@
 
 #links .text_display h {
   line-height: 51px !important;
+}
+
+#big_bend .text_display {
+  background-image: url(map_big_bend.png);
+  background-repeat: no-repeat;
+  background-position: auto;
+  background-size: 295px;
+}
+
+#panhandle_plains .text_display {
+  background-image: url(map_panhandle_plains.png);
+  background-repeat: no-repeat;
+  background-position: auto;
+  background-size: 295px;
+  background-position: 95% 48%;
+}
+
+#prairies_lakes .text_display {
+  background-image: url(map_prairies_lakes.png);
+  background-repeat: no-repeat;
+  background-size: 295px;
+  background-position: 82% 13%;
+}
+
+#pineywoods .text_display {
+  background-image: url(map_pineywoods.png);
+  background-repeat: no-repeat;
+  background-size: 295px;
+  background-position: 65% 80%;
+}
+
+#gulf_coast .text_display {
+  background-image: url(map_gulf_coast.png);
+  background-repeat: no-repeat;
+  background-size: 224px;
+  background-position: 92% 23%;
+}
+
+#south_texas_plains .text_display {
+  background-image: url(map_south_texas_plains.png);
+  background-repeat: no-repeat;
+  background-size: 295px;
+  background-position: 90% 33%;
+}
+
+#hill_country .text_display {
+  background-image: url(map_hill_country.png);
+  background-repeat: no-repeat;
+  background-size: 482px;
+  background-position: 50% 21%;
 }
