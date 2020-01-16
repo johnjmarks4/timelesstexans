@@ -14,7 +14,7 @@
   display: inline-block;
 }
 
-.buttons:hover .text_display {
+.buttons:hover .text_display, .java_hover .text_display {
   display: block;
   position: relative;
   left: 100px;
@@ -23,7 +23,7 @@
   color: black;   
 }
 
-#hover .text_display {
+#hover .text_display, .java_hover .text_display {
   display: block;
   position: relative;
   left: 100px;
@@ -32,17 +32,7 @@
   color: black;   
 }
 
-#links .buttons:hover .text_display, .text_display:hover {
-  background-color: #181818;
-  -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
-  -ms-transition: background-color 100ms linear, opacity 0.25s linear;
-  transition: background-color 100ms linear, opacity 0.25s linear;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-}
-
-#links #hover .text_display, .text_display:hover {
+#links .buttons:hover .text_display, #links .java_hover .text_display, .text_display:hover {
   background-color: #181818;
   -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
   -ms-transition: background-color 100ms linear, opacity 0.25s linear;
@@ -72,12 +62,6 @@
 }
 
 #panhandle_plains .text_display {
-  background-image: url(map_panhandle_plains.png);
-  background-size: 277px;
-  background-position: 100% 11%;
-}
-
-#hover .text_display {
   background-image: url(map_panhandle_plains.png);
   background-size: 277px;
   background-position: 100% 11%;

@@ -24,13 +24,13 @@
   </div>
 
   <div id="regions_of_texas">
-    <div id="panhandle_plains_region", class="region" onmouseover="remoteHover('panhandle_plains')" onmouseout="removeHover()"></div>
-    <div id="big_bend_region", class="region" onmouseover="remoteHover('big_bend')" onmouseout="removeHover()"></div>
-    <div id="hill_country_region", class="region" onmouseover="remoteHover('hill_country')" onmouseout="removeHover()"></div>
-    <div id="prairies_lakes_region", class="region" onmouseover="remoteHover('prairies_lakes')" onmouseout="removeHover()"></div>
-    <div id="pineywoods_region", class="region" onmouseover="remoteHover('pineywoods')" onmouseout="removeHover()"></div>
-    <div id="gulf_coast_region", class="region" onmouseover="remoteHover('gulf_coast')" onmouseout="removeHover()"></div>
-    <div id="south_texas_plains_region", class="region" onmouseover="remoteHover('south_texas_plains')" onmouseout="removeHover()"></div>
+    <div id="panhandle_plains_region", class="region" onmouseover="remoteHover('panhandle_plains')" onmouseout="removeHover('panhandle_plains')"></div>
+    <div id="big_bend_region", class="region" onmouseover="remoteHover('big_bend')" onmouseout="removeHover('big_bend')"></div>
+    <div id="hill_country_region", class="region" onmouseover="remoteHover('hill_country')" onmouseout="removeHover('hill_country')"></div>
+    <div id="prairies_lakes_region", class="region" onmouseover="remoteHover('prairies_lakes')" onmouseout="removeHover('prairies_lakes')"></div>
+    <div id="pineywoods_region", class="region" onmouseover="remoteHover('pineywoods')" onmouseout="removeHover('pineywoods')"></div>
+    <div id="gulf_coast_region", class="region" onmouseover="remoteHover('gulf_coast')" onmouseout="removeHover('gulf_coast')"></div>
+    <div id="south_texas_plains_region", class="region" onmouseover="remoteHover('south_texas_plains')" onmouseout="removeHover('south_texas_plains')"></div>
   </div>
 
   <div id="header_toggler" onclick="toggleHeader()">
@@ -73,15 +73,22 @@
     </ul>
   </div>
 </div>
-
-<script>
-  function remoteHover(i) {
+<!-- function remoteHover(i) {
     document.getElementById(i).class = i;
     var element = document.getElementById(i).id = 'hover';
   }
 
   function removeHover() {
     document.getElementById('hover').id = document.getElementById('hover').class;
+  } -->
+
+<script>
+  function remoteHover(i) {
+    document.getElementById(i).className = 'java_hover';
+  }
+
+  function removeHover(i) {
+    document.getElementById(i).className = 'buttons';
   }
 
   function toggleHeader() {
