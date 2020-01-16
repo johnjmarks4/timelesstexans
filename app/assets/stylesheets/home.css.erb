@@ -145,10 +145,10 @@ body {
 }
 
 #regions_of_texas {
+  position: relative;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  position: relative;
   bottom: 60px;
 }
 
@@ -157,6 +157,15 @@ body {
   width: 32%;
   background-repeat: no-repeat;
   background-size: 65px;
+}
+
+#panhandle_link {
+  width: 85px;
+  height: 99px;
+  display: block;
+  position: relative;
+  right: -55px;
+  top: 8.6px;
 }
 
 #panhandle_plains_region {
@@ -174,6 +183,14 @@ body {
   background-position: -84px 0px;
 }
 
+#big_bend_link {
+  display: block;
+  bottom: -6px;
+  left: 2px;
+  width: 67px;
+  height: 54.22px;
+}
+
 #big_bend_region {
   background-image: url(big_bend_spritesheet.png);
   background-size: 147px;
@@ -184,34 +201,51 @@ body {
 }
 
 #big_bend_region:hover {
-  background-position: -75px 2px;
+  background-position: -73px -1px;
+  bottom: -6px;
   width: 75px;
-  left: 4px;
-  bottom: -3px;
+  left: 2px;
+}
+
+#hill_country_link {
+  bottom: 57px;
+  width: 66px;
+  height: 60px;
+  left: 66px;
+  position: relative;
+  display: block;
 }
 
 #hill_country_region {
   background-image: url(hill_country_spritesheet.png);
   background-size: 137px;
-  bottom: 57px;
+  bottom: 0px;
   width: 66px;
   height: 60px;
-  left: 66px;
+  left: 0px;
 }
 
 #hill_country_region:hover {
   background-position: -71px -4px;
-  bottom: 57px;
-  left: 66px;
   background-size: 140px;
+  bottom: 0px;
   width: 66px;
+  height: 60px;
+  left: 0px;
+}
+
+#prairies_lakes_link {
+  position: relative;
+  left: 130px;
+  bottom: 146px;
+  width: 32px;
+  height: 72px;
+  display: block;
 }
 
 #prairies_lakes_region {
   background-image: url(prairies_lakes_spritesheet.png);
   background-size: 70px;
-  left: 130px;
-  bottom: 146px;
   width: 32px;
   height: 72px;
 }
@@ -220,37 +254,58 @@ body {
   background-position: -34.6px 0px;
 }
 
-#pineywoods_region {
-  background-image: url(pineywoods_spritesheet.png);
+#pineywoods_link {
+  position: relative;
   left: 160px;
   bottom: 219px;
   width: 36px;
   height: 74px;
+  display: block;
+}
+
+#pineywoods_region {
+  background-image: url(pineywoods_spritesheet.png);
   background-size: 75px;
+  width: 36px;
+  height: 74px;
 }
 
 #pineywoods_region:hover {
   background-position: -37.6px 0px;
 }
 
+#gulf_coast_link {
+  position: relative;
+  bottom: 223px;
+  left: 125px;
+  width: 65px;
+  height: 78px;
+  display: block;
+}
+
 #gulf_coast_region {
   background-image: url(gulf_coast_spritesheet.png);
   background-size: 147px;
-  bottom: 223px;
-  left: 125px;
-  height: 78px;
   width: 65px;
+  height: 78px;
 }
 
 #gulf_coast_region:hover {
   background-position: -74px 0px;
 }
 
+#south_texas_plains_link {
+  position: relative;
+  bottom: 286px;
+  left: 81px;
+  width: 49px;
+  height: 77px;
+  display: block;
+}
+
 #south_texas_plains_region {
   background-image: url(south_texas_plains_spritesheet.png);
   background-size: 104px;
-  bottom: 286px;
-  left: 81px;
   width: 49px;
   height: 77px;
 }
