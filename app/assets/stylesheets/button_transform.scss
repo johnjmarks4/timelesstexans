@@ -40,6 +40,8 @@
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
+  position: relative;
+  left: 92px;
 }
 
 #links .text_display {
@@ -49,7 +51,7 @@
   line-height: 120px;
   white-space: nowrap;
   position: relative;
-  left: 92px;
+  left: 3px;
 }
 
 #links .text_display h {
