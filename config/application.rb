@@ -6,8 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-#config.assets.paths << Rails.root.join("app", "assets", "fonts") 
-#config.assets.enabled = true
+config.assets.paths << Rails.root.join("app", "assets", "fonts") 
+config.assets.enabled = true
 
 module Timelesstexans
   class Application < Rails::Application
