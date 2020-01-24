@@ -1,0 +1,559 @@
+@font-face {
+  font-family: 'IFC';
+  src: url("IFC INSANE RODEO BOLD Bold.ttf") format("truetype");
+}
+/* line 6, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+.text_display {
+  font-family: 'IFC';
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 13, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+.button_transform {
+  display: inline-block;
+}
+
+/* line 17, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+.buttons:hover .text_display, .java_hover .text_display {
+  display: block;
+  position: relative;
+  left: 100px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+/* line 26, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#hover .text_display, .java_hover .text_display {
+  display: block;
+  position: relative;
+  left: 100px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+/* line 35, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#links .buttons:hover .text_display, #links .java_hover .text_display, .text_display:hover {
+  background-color: #181818;
+  -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
+  -ms-transition: background-color 100ms linear, opacity 0.25s linear;
+  transition: background-color 100ms linear, opacity 0.25s linear;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  position: relative;
+  left: 92px;
+}
+
+/* line 47, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#links .text_display {
+  opacity: 0;
+  width: 184.125px;
+  height: 120px;
+  line-height: 120px;
+  white-space: nowrap;
+  position: relative;
+  left: 3px;
+}
+
+/* line 57, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#links .text_display h {
+  line-height: 51px !important;
+}
+
+/* line 61, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#big_bend .text_display {
+  background-image: url(map_big_bend.png);
+  background-size: 341px;
+}
+
+/* line 66, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#panhandle_plains .text_display {
+  background-image: url(map_panhandle_plains.png);
+  background-size: 277px;
+  background-position: 100% 11%;
+}
+
+/* line 72, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#prairies_lakes .text_display {
+  background-image: url(map_prairies_lakes.png);
+  background-size: 442px;
+  background-position: 81% 16%;
+}
+
+/* line 78, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#pineywoods .text_display {
+  background-image: url(map_pineywoods.png);
+  background-size: 349px;
+  background-position: 74% 60%;
+}
+
+/* line 84, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#gulf_coast .text_display {
+  background-image: url(map_gulf_coast.png);
+  background-size: 224px;
+  background-position: 92% 23%;
+}
+
+/* line 90, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#south_texas_plains .text_display {
+  background-image: url(map_south_texas_plains.png);
+  background-size: 295px;
+  background-position: 90% 33%;
+}
+
+/* line 96, C:/Users/johnj/odin-project/timelesstexans/app/assets/stylesheets/button_transform.scss */
+#hill_country .text_display {
+  background-image: url(map_hill_country.png);
+  background-size: 482px;
+  background-position: 50% 21%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  width: 100%;
+}
+
+body {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+#homepage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#title_div1 {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 85px;
+}
+
+#about_us {
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 47.875px;
+  width: 75px;
+  height: 75px;
+  background-image: linear-gradient(
+    #FFAE42,
+    #f0592b,
+    #e14034);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 75px;
+  font-family: Segoe UI;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+
+#title_div2 {
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+  height: 85px;
+  line-height: 85px;
+}
+
+#title {
+  font-family: "Chewy", sans-serif;
+  src: url(/assets/chewy.ttf) format("truetype");
+  font-size: 85px;
+  text-align: center;
+}
+
+#left_stars {
+  position: absolute;
+  width: 234px;
+  height: 12.1428px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#right_stars {
+  position: absolute;
+  right: 0px;
+  width: 234px;
+  height: 12.1428px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star {
+  display: inline-block;
+  position: relative;
+  height: 12.1428px;
+}
+
+#star1 {
+  float: left;
+}
+
+#star2 {
+  position: absolute;
+  left: 50%;
+}
+
+#star4 {
+  position: absolute;
+  left: 50%;
+}
+
+#star3 {
+  float: right;
+}
+
+#cactus1 {
+  position: absolute;
+  bottom: 140px;
+  left: 76px;
+  width: 13px;
+  height: 25px;
+  background-image: url(cactus3.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+
+#cactus2 {
+  position: absolute;
+  bottom: 140px;
+  left: 55.3275px;
+  width: 19px;
+  height: 50px;
+  background-image: url(cactus4.png);
+  background-size: 19px;
+  background-repeat: no-repeat;
+}
+
+#links {
+  position: absolute;
+  bottom: -56.8%;
+  list-style: none;
+  width: 101.2%;
+  height: 120px;
+  margin: 0;
+  left: -8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  background-color: black;
+}
+
+#links > li {
+  display: block;
+  float: left;
+  width: 10%;
+  margin-left: 57.1px;
+  padding-bottom: 5px;
+}
+
+.buttons, .java_hover {
+  display: inline-block;
+  background-size: 184.125px 120px;
+  text-align: center;
+  width: 184.125px;
+  height: 120px;
+  left: 12.7px;
+  position: relative;
+  margin: 2.9px;
+  bottom: 2.9px;
+}
+
+.buttons a, .java_hover a {
+  position: absolute;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+#big_bend {
+  background-image: url(balancedrock.jpg);
+}
+
+#prairies_lakes {
+  background-image: url(Crosstimbers_2005_Richards_Ranch.png);
+}
+
+#panhandle_plains {
+  background-image: url(panhandle_plains.jpg);
+}
+
+#hill_country {
+  background-image: url(hill_country.jpg);
+}
+
+#pineywoods {
+  background-image: url(pineywoods.jpg);
+}
+
+#south_texas_plains {
+  background-image: url(south_texas_plains.jpg);
+}
+
+#gulf_coast {
+  background-image: url(gulf_coast.jpg);
+}
+
+#pick_a_region {
+  font-family: 'Kalam', cursive;
+  color: #f0592b;
+  position: absolute;
+  top: 163px;
+  left: 38.5%;
+  font-size: 18px;
+}
+
+#arrow {
+  position: absolute;
+  top: 191px;
+  left: 38%;
+  width: 50px;
+}
+
+#regions_of_texas {
+  position: relative;
+  margin: 0 auto;
+  width: 199px;
+  height: 193px;
+  top: 91px;
+}
+
+.region {
+  position: relative;
+  width: 32%;
+  background-repeat: no-repeat;
+  background-size: 65px;
+}
+
+#panhandle_link {
+  width: 85px;
+  height: 78px;
+  display: block;
+  position: relative;
+  right: -55px;
+}
+
+#panhandle_plains_region {
+  background-image: url(panhandle_spritesheet.png);
+  width: 79px;
+  height: 87px;
+  margin: 0 auto;
+  background-size: 167px;
+  position: relative;
+  right: 5px;
+}
+
+#panhandle_plains_region:hover {
+  background-position: -84px 0px;
+}
+
+#big_bend_link {
+  display: block;
+  bottom: -6px;
+  left: 2px;
+  width: 67px;
+  height: 54.22px;
+}
+
+#big_bend_region {
+  background-image: url(big_bend_spritesheet.png);
+  background-size: 147px;
+  bottom: -6px;
+  left: 2px;
+  width: 67px;
+  height: 54.22px;
+}
+
+#big_bend_region:hover {
+  background-position: -73px -1px;
+  bottom: -6px;
+  width: 75px;
+  left: 2px;
+}
+
+#hill_country_link {
+  bottom: 57px;
+  width: 66px;
+  height: 60px;
+  left: 66px;
+  position: relative;
+  display: block;
+}
+
+#hill_country_region {
+  background-image: url(hill_country_spritesheet.png);
+  background-size: 137px;
+  width: 66px;
+  height: 60px;
+}
+
+#hill_country_region:hover {
+  background-position: -71px -4px;
+  background-size: 140px;
+  bottom: 0px;
+  width: 66px;
+  height: 60px;
+  left: 0px;
+}
+
+#prairies_lakes_link {
+  position: relative;
+  left: 130px;
+  bottom: 146px;
+  width: 32px;
+  height: 72px;
+  display: block;
+}
+
+#prairies_lakes_region {
+  background-image: url(prairies_lakes_spritesheet.png);
+  background-size: 70px;
+  width: 32px;
+  height: 72px;
+}
+
+#prairies_lakes_region:hover {
+  background-position: -34.6px 0px;
+}
+
+#pineywoods_link {
+  position: relative;
+  left: 160px;
+  bottom: 219px;
+  width: 36px;
+  height: 74px;
+  display: block;
+}
+
+#pineywoods_region {
+  background-image: url(pineywoods_spritesheet.png);
+  background-size: 75px;
+  width: 36px;
+  height: 74px;
+}
+
+#pineywoods_region:hover {
+  background-position: -37.6px 0px;
+}
+
+#gulf_coast_link {
+  position: relative;
+  bottom: 223px;
+  left: 125px;
+  width: 65px;
+  height: 78px;
+  display: block;
+}
+
+#gulf_coast_region {
+  background-image: url(gulf_coast_spritesheet.png);
+  background-size: 147px;
+  width: 65px;
+  height: 78px;
+}
+
+#gulf_coast_region:hover {
+  background-position: -74px 0px;
+}
+
+#south_texas_plains_link {
+  position: relative;
+  bottom: 286px;
+  left: 81px;
+  width: 49px;
+  height: 77px;
+  display: block;
+}
+
+#south_texas_plains_region {
+  background-image: url(south_texas_plains_spritesheet.png);
+  background-size: 104px;
+  width: 49px;
+  height: 60px;
+}
+
+#south_texas_plains_region:hover {
+  background-position: -53px -2px !important;
+  width: 49px;
+  height: 60px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
