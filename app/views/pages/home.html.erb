@@ -3,112 +3,114 @@
   <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 </head>
 
-<div id="homepage">
+<div id="container">
+  <div id="homepage">
+    <div id="title_div1">
+      <a href="/about", id="about_us">ABOUT US</a>
+      <div id="title_div2">
 
-  <div id="title_div1">
-    <div id="title_div2">
+        <div id="left_stars">
+          <%=image_tag("star.png", class: "star", id: "star1") %>
+          <%=image_tag("star.png", class: "star", id: "star2") %>
+          <%=image_tag("star.png", class: "star", id: "star3") %>
+        </div>
 
-      <div id="left_stars">
-        <%=image_tag("star.png", class: "star", id: "star1") %>
-        <%=image_tag("star.png", class: "star", id: "star2") %>
-        <%=image_tag("star.png", class: "star", id: "star3") %>
-      </div>
+        <h1 id="title">Explore Texas</h1>
 
-      <h1 id="title">Explore Texas</h1>
-
-      <div id="right_stars">
-        <%=image_tag("star.png", class: "star", id: "star1") %>
-        <%=image_tag("star.png", class: "star", id: "star4") %>
-        <%=image_tag("star.png", class: "star", id: "star3") %>
+        <div id="right_stars">
+          <%=image_tag("star.png", class: "star", id: "star1") %>
+          <%=image_tag("star.png", class: "star", id: "star4") %>
+          <%=image_tag("star.png", class: "star", id: "star3") %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <a href="/about", id="about_us">ABOUT US</a>
+    <p id="pick_a_region">Pick a region!</p>
+    <%=image_tag("arrow.png", id: "arrow") %>
 
-  <p id="pick_a_region">Pick a region!</p>
-  <%=image_tag("arrow.png", id: "arrow") %>
+    <div id="regions_of_texas">
 
-  <div id="regions_of_texas">
-
-    <a href='/panhandle_plains', id="panhandle_link">
-      <div id="panhandle_plains_region", class="region" onmouseover="remoteHover('panhandle_plains')" onmouseout="removeHover('panhandle_plains')">
-      </div>
-    </a>
-
-    <a href='/big_bend', id="big_bend_link">
-      <div id="big_bend_region", class="region" onmouseover="remoteHover('big_bend')" onmouseout="removeHover('big_bend')">
-      </div>
-    </a>
-
-    <a href='/hill_country', id="hill_country_link">
-      <div id="hill_country_region", class="region" onmouseover="remoteHover('hill_country')" onmouseout="removeHover('hill_country')">
-      </div>
-    </a>
-
-    <a href='/prairies_lakes', id="prairies_lakes_link">
-      <div id="prairies_lakes_region", class="region" onmouseover="remoteHover('prairies_lakes')" onmouseout="removeHover('prairies_lakes')">
-      </div>
-    </a>
-
-    <a href='/pineywoods', id="pineywoods_link">
-      <div id="pineywoods_region", class="region" onmouseover="remoteHover('pineywoods')" onmouseout="removeHover('pineywoods')">
-      </div>
-    </a>
-
-    <a href='/gulf_coast', id="gulf_coast_link">
-      <div id="gulf_coast_region", class="region" onmouseover="remoteHover('gulf_coast')" onmouseout="removeHover('gulf_coast')">
-      </div>
-    </a>
-
-    <a href='/south_texas_plains', id="south_texas_plains_link">
-      <div id="south_texas_plains_region", class="region" onmouseover="remoteHover('south_texas_plains')" onmouseout="removeHover('south_texas_plains')">
-      </div>
-    </a>
-
-  </div>
-
-  <div id="cactus1"></div>
-  <div id="cactus2"></div>
-
-  <div id="header_toggler" onclick="toggleHeader()">
-    <ul id="links">
-      <%= content_tag(:div, class: "buttons", id: "big_bend") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Big Bend", "/big_bend", class: "text_display" %></li>
+      <a href='/panhandle_plains', id="panhandle_link">
+        <div id="panhandle_plains_region", class="region" onmouseover="remoteHover('panhandle_plains')" onmouseout="removeHover('panhandle_plains')">
         </div>
-      <% end -%>
-      <%= content_tag(:div, class: "buttons", id: "panhandle_plains") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Panhandle", "/panhandle_plains", class: "text_display" %></li>
+      </a>
+
+      <a href='/big_bend', id="big_bend_link">
+        <div id="big_bend_region", class="region" onmouseover="remoteHover('big_bend')" onmouseout="removeHover('big_bend')">
         </div>
-      <% end %>
-      <%= content_tag(:div, class: "buttons", id: "hill_country") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Hill Country", "/hill_country", class: "text_display" %></li>
+      </a>
+
+      <a href='/hill_country', id="hill_country_link">
+        <div id="hill_country_region", class="region" onmouseover="remoteHover('hill_country')" onmouseout="removeHover('hill_country')">
         </div>
-      <% end -%>
-      <%= content_tag(:div, class: "buttons", id: "prairies_lakes") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Prairies", "/prairies_lakes", class: "text_display" %></li>
+      </a>
+
+      <a href='/prairies_lakes', id="prairies_lakes_link">
+        <div id="prairies_lakes_region", class="region" onmouseover="remoteHover('prairies_lakes')" onmouseout="removeHover('prairies_lakes')">
         </div>
-      <% end -%>
-      <%= content_tag(:div, class: "buttons", id: "pineywoods") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Pineywoods", "/pineywoods", class: "text_display" %></li>
+      </a>
+
+      <a href='/pineywoods', id="pineywoods_link">
+        <div id="pineywoods_region", class="region" onmouseover="remoteHover('pineywoods')" onmouseout="removeHover('pineywoods')">
         </div>
-      <% end -%>
-      <%= content_tag(:div, class: "buttons", id: "gulf_coast") do -%>
-        <div class="button_transform">
-          <li><%=link_to "Gulf Coast", "/gulf_coast", class: "text_display" %></li>
+      </a>
+
+      <a href='/gulf_coast', id="gulf_coast_link">
+        <div id="gulf_coast_region", class="region" onmouseover="remoteHover('gulf_coast')" onmouseout="removeHover('gulf_coast')">
         </div>
-      <% end -%>
-      <%= content_tag(:div, class: "buttons", id: "south_texas_plains") do -%>
-        <div class="button_transform">
-          <li><%=link_to "South Plains", "/south_texas_plains",class: "text_display" %></li>
+      </a>
+
+      <a href='/south_texas_plains', id="south_texas_plains_link">
+        <div id="south_texas_plains_region", class="region" onmouseover="remoteHover('south_texas_plains')" onmouseout="removeHover('south_texas_plains')">
         </div>
-      <% end -%>
-    </ul>
+      </a>
+
+    </div>
+
+    <div id="cactus1"></div>
+    <div id="cactus2"></div>
+
+    <div id="footer">
+      <div id="header_toggler" onclick="toggleHeader()">
+        <ul id="links">
+          <%= content_tag(:div, class: "buttons", id: "big_bend") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Big Bend", "/big_bend", class: "text_display" %></li>
+            </div>
+          <% end -%>
+          <%= content_tag(:div, class: "buttons", id: "panhandle_plains") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Panhandle", "/panhandle_plains", class: "text_display" %></li>
+            </div>
+          <% end %>
+          <%= content_tag(:div, class: "buttons", id: "hill_country") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Hill Country", "/hill_country", class: "text_display" %></li>
+            </div>
+          <% end -%>
+          <%= content_tag(:div, class: "buttons", id: "prairies_lakes") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Prairies", "/prairies_lakes", class: "text_display" %></li>
+            </div>
+          <% end -%>
+          <%= content_tag(:div, class: "buttons", id: "pineywoods") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Pineywoods", "/pineywoods", class: "text_display" %></li>
+            </div>
+          <% end -%>
+          <%= content_tag(:div, class: "buttons", id: "gulf_coast") do -%>
+            <div class="button_transform">
+              <li><%=link_to "Gulf Coast", "/gulf_coast", class: "text_display" %></li>
+            </div>
+          <% end -%>
+          <%= content_tag(:div, class: "buttons", id: "south_texas_plains") do -%>
+            <div class="button_transform">
+              <li><%=link_to "South Plains", "/south_texas_plains",class: "text_display" %></li>
+            </div>
+          <% end -%>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 

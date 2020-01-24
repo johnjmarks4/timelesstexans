@@ -3,28 +3,64 @@ html {
 }
 
 body {
+  position: absolute;
   overflow: hidden;
+  height:100%;
+  width: 100%;
+  padding:0;
+}
+
+#container {
+  min-height:100%;
+  position:relative;
+}
+
+#footer {
+  position: absolute !important;
+  bottom: 0 !important;
   width: 100%;
 }
 
 #homepage {
-  top: 80px;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #title_div1 {
-  width: 100%;
-  height: 111px;
   position: relative;
-  bottom: 120px;
-  right: 8px;
+  margin-top: 25px;
+  width: 100%;
+  height: 85px;
+}
+
+#about_us {
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 47.875px;
+  width: 75px;
+  height: 75px;
+  background-image: linear-gradient(
+    #FFAE42,
+    #f0592b,
+    #e14034);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 75px;
+  font-family: Segoe UI;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
 }
 
 #title_div2 {
   width: 75%;
-  height: 111px;
   position: relative;
   margin: 0 auto;
+  height: 85px;
+  line-height: 85px;
 }
 
 #title {
@@ -62,41 +98,22 @@ body {
 }
 
 #star2 {
+  position: absolute;
   left: 50%;
-  transform: translateX(-100%);
 }
 
 #star4 {
+  position: absolute;
   left: 50%;
-  transform: translateX(-150%);
 }
 
 #star3 {
   float: right;
 }
 
-#about_us {
-  position: absolute;
-  right: 55.3275px;
-  top: -105px;
-  width: 75px;
-  height: 75px;
-  background-image: linear-gradient(
-    #FFAE42,
-    #f0592b,
-    #e14034);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 75px;
-  font-family: Segoe UI;
-  font-size: 13px;
-  text-decoration: none;
-  color: black;
-}
-
 #cactus1 {
   position: absolute;
-  bottom: -37px;
+  bottom: 140px;
   left: 76px;
   width: 13px;
   height: 25px;
@@ -107,7 +124,7 @@ body {
 
 #cactus2 {
   position: absolute;
-  bottom: -37px;
+  bottom: 140px;
   left: 55.3275px;
   width: 19px;
   height: 50px;
@@ -144,7 +161,7 @@ body {
   text-align: center;
   width: 184.125px;
   height: 120px;
-  left: 5.7px;
+  left: 12.7px;
   position: relative;
   margin: 2.9px;
   bottom: 2.9px;
@@ -189,24 +206,24 @@ body {
   font-family: 'Kalam', cursive;
   color: #f0592b;
   position: absolute;
-  bottom: 232px;
-  left: 512px;
+  top: 163px;
+  left: 36.5%;
   font-size: 18px;
 }
 
 #arrow {
   position: absolute;
-  bottom: 191px;
-  left: 539px;
+  top: 191px;
+  left: 38%;
   width: 50px;
 }
 
 #regions_of_texas {
   position: relative;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  bottom: 60px;
+  width: 199px;
+  height: 193px;
+  top: 91px;
 }
 
 .region {
@@ -218,11 +235,10 @@ body {
 
 #panhandle_link {
   width: 85px;
-  height: 99px;
+  height: 78px;
   display: block;
   position: relative;
   right: -55px;
-  top: 8.6px;
 }
 
 #panhandle_plains_region {
@@ -233,7 +249,6 @@ body {
   background-size: 167px;
   position: relative;
   right: 5px;
-  top: 12.6px;
 }
 
 #panhandle_plains_region:hover {
@@ -276,10 +291,8 @@ body {
 #hill_country_region {
   background-image: url(hill_country_spritesheet.png);
   background-size: 137px;
-  bottom: 0px;
   width: 66px;
   height: 60px;
-  left: 0px;
 }
 
 #hill_country_region:hover {
