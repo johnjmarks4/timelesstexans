@@ -6,6 +6,7 @@ body {
   position: absolute;
   overflow: hidden;
   height: 100%;
+  min-height: 560px;
   width: 100%;
   padding: 0;
 }
@@ -31,6 +32,7 @@ body {
   position: relative;
   margin-top: 25px;
   width: 100%;
+  min-width: 516px;
   height: 85px;
 }
 
@@ -93,21 +95,16 @@ body {
   height: 12.1428px;
 }
 
-#star1 {
+#star1, #star4 {
   float: left;
 }
 
-#star2 {
+#star2, #star5 {
   position: absolute;
   left: 50%;
 }
 
-#star4 {
-  position: absolute;
-  left: 50%;
-}
-
-#star3 {
+#star3, #star6 {
   float: right;
 }
 
@@ -135,12 +132,12 @@ body {
 
 #links {
   position: absolute;
+  left: -7px;
   bottom: -56.8%;
   list-style: none;
-  width: 101.2%;
+  width: 1382.39px;
   height: 120px;
   margin: 0;
-  left: -8px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
@@ -384,4 +381,28 @@ body {
   background-position: -53px -2px !important;
   width: 49px;
   height: 60px;
+}
+
+@media only screen and (max-width: 1337px), (max-height: 560px) {
+
+  html, body { overflow: visible; }
+
+}
+
+@media only screen and (max-width: 1238px) {
+
+  #star3, #star4 { visibility: hidden; }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #star1, #star2, #star5, #star6 { visibility: hidden; }
+
+}
+
+@media only screen and (max-width: 715px) {
+
+  #title { width: 447px; }
+
 }
