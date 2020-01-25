@@ -132,7 +132,6 @@ body {
 
 #links {
   position: absolute;
-  left: -7px;
   bottom: -56.8%;
   list-style: none;
   width: 1382.39px;
@@ -203,24 +202,34 @@ body {
   font-family: 'Kalam', cursive;
   color: #f0592b;
   position: absolute;
-  top: 163px;
-  left: 38%;
+  top: 63px;
+  left: -8px;
   font-size: 18px;
 }
 
 #arrow {
   position: absolute;
-  top: 191px;
-  left: 40%;
+  top: 90px;
+  left: 18px;
   width: 50px;
+}
+
+#arrow_and_texas {
+  position: relative;
+  margin: 0 auto;
+  bottom: 12px;
+  top: 10px;
+  width: 309px;
+  height: 365px;
 }
 
 #regions_of_texas {
   position: relative;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 199px;
   height: 193px;
-  top: 91px;
 }
 
 .region {
@@ -404,5 +413,15 @@ body {
 @media only screen and (max-width: 715px) {
 
   #title { width: 447px; }
+
+  #pick_a_region { 
+    top: 91px;
+    left: -20px;
+  }
+
+  #arrow { 
+    top: 118px;
+    left: 6px;
+  }
 
 }
